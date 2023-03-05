@@ -2,7 +2,7 @@
 
 to get site running locally, CD into directory in Terminal, and:
 
-```$ npm install```
+```$ yarn install```
 
 then, in same Terminal window (to compile):
 
