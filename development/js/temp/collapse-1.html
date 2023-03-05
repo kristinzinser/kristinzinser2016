@@ -1,0 +1,28 @@
+<div class="col-md-4">
+  <h3>Type in your number :)</h3>
+  <script>
+    function isThisPrime() {
+      var number = document.getElementById("number").value;
+      if (isPrime(number)) {
+        document.getElementById("result").innerHTML = alert("yay! you put in a prime number!");
+      }
+      else {
+        document.getElementById("result").innerHTML = alert("whoops... not a prime number.");
+      }
+    }   
+    function isPrime(n) {
+      if (n < 2) {return false}
+      if (n != Math.round(n)) {return false}
+      var isPrime = true;
+      for (var i = 2; i <= Math.sqrt(n); i++) {
+          if (n % i == 0) {isPrime = false}
+      }
+      return isPrime;
+    }
+  </script>
+  <input id="number" class="input-group pull-left" onclick="this.select()" />
+  <input class="btn btn-sm pull-left" type="button" value="is this prime?" onClick="isThisPrime()" />
+</div>
+<div class="col-md-8">
+  <iframe height="250" src="//jsfiddle.net/kzinser/44gqsh50/embedded/js" allowfullscreen="allowfullscreen"></iframe>
+</div>

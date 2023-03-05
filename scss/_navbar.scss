@@ -1,0 +1,36 @@
+.navbar-kz{
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0; //to go w/checkered background
+	@include regular-box-shadow;
+	.navbar-brand {
+		font-weight: 300;
+	}
+	.name {
+		font-family: 'Montserrat', sans-serif; 
+		font-weight: 700;
+		color: $blue;
+	}
+	.navbar-primary-links {
+		float: right;
+		margin: 0;
+	}
+	.navbar-primary-links li a {
+		font-weight: 300;
+		color: $blue;
+		.fa {
+			transition: all 1s;
+			color: #999;
+		}
+		&:hover {
+			background-color: $light-blue;
+			color: #fff;
+			.fa {
+				color: #eee;
+			}
+		}
+	}
+}
+.checkered-background {
+	padding: 20px 0;
+}

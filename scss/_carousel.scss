@@ -1,0 +1,41 @@
+.carousel-kz {
+	.carousel-control {
+        background: transparent;
+        text-shadow: none;
+        color: $blue;
+        width: auto;
+        font-size: 48px;
+        opacity: 1;
+
+        top: 40%;
+        &:hover {
+        	opacity: 0.5;
+        }
+	}
+	.carousel-indicators {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        li {
+        	border-color: $blue;
+        }
+        li.active {
+        	background-color: $blue;
+        }
+	}
+	.item {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+    .second-slide {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.portfolio-desktop {
+    .carousel-inner {
+        height: 350px;
+    }
+}

@@ -1,0 +1,30 @@
+<div class="col-md-5">
+	<ul class="list-group">
+		<li class="list-group-item">Create a car. Pass the color of the car as a parameter. If color is not specified, it should default to 'black'.</li>
+		<li class="list-group-item">The car should have a honk method, which sets its honking property to true immediately, and sets its honking property to false after 1 second</li>
+		<li class="list-group-item">The car should have a run method, which sets its running property to true.</li>
+		<li class="list-group-item">We will be creating many thousands of car objects rapidly, so we need it to be as efficient as possible for memory usage and speed of creation.</li>
+	</ul>
+	<script>
+		function Car(color) {
+			this.color = color || 'black';
+		}
+		Car.prototype.honk = function () {
+		  this.honking = true;
+	    setTimeout(function () {
+	      this.honking = false;
+	    }.bind(this), 1000);
+		};
+		Car.prototype.run = function () {
+		   this.running = true;
+		};
+		var pinkCar = new Car('pink');
+		var blackCar = new Car();
+	</script>
+</div>
+
+
+
+<div class="col-md-7">
+	<iframe height="275" src="//jsfiddle.net/kzinser/t9fj9346/embedded/js" allowfullscreen="allowfullscreen"></iframe>
+</div>

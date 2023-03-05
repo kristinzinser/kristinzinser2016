@@ -1,0 +1,64 @@
+$dark-gray: #333;
+$med-gray: #666;
+$light-gray: #e6e6e6;
+
+$blue: #207e9d;
+$light-blue: lighten($blue, 10%);
+
+$purple: #4d017b;
+
+
+@mixin regular-box-shadow() {
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);
+}
+
+@mixin scale-text() {
+	transition: font-size .5s;
+}
+
+@mixin checkered-background() {
+	background-image:
+      -moz-linear-gradient(45deg, $light-gray 25%, transparent 25%), 
+      -moz-linear-gradient(-45deg, $light-gray 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, $light-gray 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, $light-gray 75%);
+    background-image:
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, $light-gray), color-stop(.25, transparent)), 
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, $light-gray), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, $light-gray)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, $light-gray));
+
+    -moz-background-size:26px 26px;
+    background-size:26px 26px;
+    -webkit-background-size:26px 27px; // webkit
+    
+    background-position:0 0, 13px 0, 13px -13px, 0px 13px;
+}
+
+.checkered-background {
+	@include checkered-background;
+}
+ 
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-6px);}
+ 60% {-webkit-transform: translateY(-3px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-6px);}
+ 60% {-moz-transform: translateY(-3px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-6px);}
+ 60% {-o-transform: translateY(-3px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-6px);}
+ 60% {transform: translateY(-3px);}
+}
+ 

@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+	/******** accordion menu settings for menu on LEFT SIDE OF PAGE**/
+		
+		#leftCol .menuTop, #leftCol .menuBottom{
+			float:left;
+			display:inline;
+			width:152px;
+			height:4px;
+			background:url(../images/groupBoxesBottomTop.png) no-repeat 0px -11px;
+		}
+		
+		#leftCol .menuBottom{
+			background-position:0px 0px!important;
+		}
+		
+		#leftCol .groupPadding{
+			float:left;
+			display:inline;
+			width:152px;
+			height:5px;
+		}
+		
+		
+				
+		#leftCol .glossymenu {
+		margin: 10px 0 0 0;
+		padding: 0;
+		width: 152px; /*width of menu*/
+		}
+		
+		#leftCol .glossymenu  a.addPages{
+			font-size:11px;
+			display:block;
+			color:#3b5998;
+			text-decoration:none;
+			padding:0 0 0 5px;
+		}
+		
+		#leftCol .glossymenu  a:hover.addPages{
+			text-decoration:underline;
+		}
+		
+		#leftCol .glossymenu  a.menuitem{
+		background:#FFF;
+		font: normal 11px "Lucida Grande", Tahoma, Arial, sans-serif;
+		color: #333;
+		display: block;
+		position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+		width: auto;
+		padding:2px 0 5px 5px;
+		text-decoration: none;
+		}
+		
+		#leftCol .opened{
+			font-weight:bold!important;
+		}
+		
+		
+		#leftCol .glossymenu  a.menuitem:visited, #leftCol .glossymenu  .menuitem:active{
+		color: #333;
+		}
+		
+		#leftCol .glossymenu  a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		border: none;
+		}
+		
+		#leftCol .glossymenu  a.menuitem:hover{
+			text-decoration:underline;
+		}
+		
+		#leftCol .glossymenu  div.submenu{ /*DIV that contains each sub menu*/
+		background: #FFF;
+		}
+		
+		#leftCol .glossymenu  div.submenu ul{ /*UL of each sub menu*/
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		#leftCol .glossymenu  div.submenu ul li{
+	
+		margin:0 0 0 7px;
+		width:132px;
+		height:22px;
+		float:left;
+		display:inline;
+		border-bottom:1px solid #EEE;
+		}
+		
+		#leftCol .glossymenu  div.submenu ul li.first{
+			border-top:1px solid #EEE;
+		}
+		
+		#leftCol .glossymenu  div.submenu ul li:hover{
+			cursor:pointer;
+			background:#5072ac;
+		}
+		#leftCol .glossymenu  div.submenu ul li a{
+		display: block;
+		font: normal 11px "Lucida Grande", Tahoma, Arial, sans-serif;
+		color: black;
+		text-decoration: none;
+		float:left;
+		height:19px;
+		width:109px;
+		background:url(../images/icons.png) no-repeat -110px -185px;
+		padding:3px 0 0 23px;
+		}
+		
+		#leftCol .glossymenu  div.submenu ul li a:hover{
+			color:#FFF;
+		}
+		
+		/****** END accordion menu settings for LEFT SIDE OF PAGE**/
+	
+
+
+	/******** accordion menu settings for menu in content area**/
+		
+
+		#menus .groupPadding{
+			float:left;
+			display:inline;
+			width:439px;
+			height:5px;
+
+		border-top:1px solid #bac3d8;
+		}
+		
+				
+		#menus .glossymenu {
+		margin: 10px 0 0 0;
+		padding: 0;
+		width: 436px; /*width of menu*/
+		}
+		
+		
+		
+		#menus .glossymenu  a.menuitem{
+		background:#FFF;
+		font: normal 10px "Lucida Grande", Tahoma, Arial, sans-serif;
+		color: #1d4088;
+		display: block;
+		position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+		width: 436px;
+		height:21px;
+		text-decoration: none;
+		padding:5px 0 0 0;
+		
+		border-left:3px solid #bac3d8;
+		}
+		
+		#menus .glossymenu  a.target{
+			background:url(../images/icons.png) no-repeat -100px 4px #FFF;
+			padding-left:25px;
+			width:411px;
+		}
+		
+		#menus .glossymenu  a.publish{
+			background:url(../images/icons.png) no-repeat -100px -27px #FFF;
+			padding-left:25px;
+			width:411px;
+		}
+		
+		#menus .glossymenu  a.twitter{
+			background:url(../images/icons.png) no-repeat -107px -60px #FFF;
+			padding-left:25px;
+			width:411px;
+		}
+		
+		#menus .glossymenu  a.schedule{
+			background:url(../images/icons.png) no-repeat -107px -101px #FFF;
+			padding-left:25px;
+			width:411px;
+		}
+		
+		#menus .opened{
+			font-weight:normal!important;
+		}
+		
+		
+		#menus .glossymenu  a.menuitem:visited, #menus .glossymenu  .menuitem:active{
+		color: #1d4088;
+		}
+		
+		#menus .glossymenu  a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+		position: absolute;
+		top: 8px;
+		right: 5px;
+		border: none;
+		}
+		
+		#menus .glossymenu  a.menuitem:hover{
+			text-decoration:underline;
+		}
+		
+		#menus .glossymenu  div.submenu{ /*DIV that contains each sub menu*/
+		background: #FFF;
+		padding:10px;
+		width:416px;
+		font-size:12px;
+		border-left:3px solid #bac3d8;
+		}
+		
+		#menus .glossymenu  div.submenu ul{ /*UL of each sub menu*/
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		#menus .glossymenu  div.submenu ul li{
+	
+		margin:0 0 0 7px;
+		width:132px;
+		height:22px;
+		float:left;
+		display:inline;
+		border-bottom:1px solid #EEE;
+		}
+		
+		#menus .glossymenu  div.submenu ul li.first{
+			border-top:1px solid #EEE;
+		}
+		
+		#menus .glossymenu  div.submenu ul li:hover{
+			cursor:pointer;
+			background:#5072ac;
+		}
+		#menus .glossymenu  div.submenu ul li a{
+		display: block;
+		font: normal 11px "Lucida Grande", Tahoma, Arial, sans-serif;
+		color: black;
+		text-decoration: none;
+		float:left;
+		height:19px;
+		width:109px;
+		background:url(../images/icons.png) no-repeat -110px -185px;
+		padding:3px 0 0 23px;
+		}
+		
+		#menus .glossymenu  div.submenu ul li a:hover{
+			color:#FFF;
+		}
+		
+		
+		/****** END accordion menu settings for content area**/
+	

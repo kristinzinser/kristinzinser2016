@@ -1,0 +1,37 @@
+.btn {
+	font-size: 12px;
+}
+.btn-primary {
+	background: $blue;
+	border: 0;
+	&:focus,
+	&:active,
+	&:hover {
+		background: $light-blue;
+		border: 0;
+	}
+}
+
+footer .btn {
+	border: 0;
+}
+
+.btn-resume {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	.fa-stack {
+		margin-right: 5px;
+	}
+	.fa-cloud {
+		color: #fff;
+	}
+	.fa-arrow-down {
+		color: $blue;
+	}
+	&:hover {
+		.fa-arrow-down {
+			color: $light-blue;
+		}
+	}
+}

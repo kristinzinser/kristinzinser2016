@@ -1,0 +1,27 @@
+.flex-row {
+	display: flex;
+}
+.portfolio-desktop {
+	border-bottom: 1px dashed rgba($med-gray, 0.50);
+}
+.portfolio-mobile {
+	border-top: 1px dashed rgba($med-gray, 0.50);
+	border-bottom: 1px dashed rgba($med-gray, 0.50);
+}
+.main-content-container {
+	margin-top: 20px;
+}
+
+a,
+.btn-resume .fa-arrow-down {
+	transition: all 1s ease-in-out;
+}
+
+.transparent-image {
+	background: $light-gray;
+	border: 7px solid #fff;
+}
+
+.animated-arrow {
+	animation: bounce 2s infinite;
+}

@@ -1,0 +1,13 @@
+.panel-informational {
+	border: 0;
+	box-shadow: none;
+	.panel-heading {
+		border: 0;
+	}
+	.list-group-item {
+		border-style: dashed;
+		&:first-child {
+			border-top: 0;
+		}
+	}
+}

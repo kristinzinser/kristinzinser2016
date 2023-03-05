@@ -1,0 +1,22 @@
+.modal {
+	.modal-title {
+		color: $blue;
+	}
+	.modal-body {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.modal-footer {
+		background-color: $dark-gray;
+		border-color: transparent;
+		text-align: center;
+	}
+}
+
+.modal-more-info {
+	h4 .label {
+		font-size: 12px;
+	}
+}

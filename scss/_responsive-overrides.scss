@@ -1,0 +1,64 @@
+@media (max-width: $screen-md) {
+	.navbar-brand {
+		font-size: 14px;
+		.name {
+			font-size: 18px;
+		}
+	}
+	.navbar-kz {
+		.navbar-primary-links {
+			float: none;
+		}
+	}
+	.panel-group .panel-heading+.panel-collapse>.skills-ul-2 {
+		border-top: 0;
+	}
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+	.navbar-kz {
+		.navbar-primary-links {
+			float: right;
+			li{
+				a {
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+		}
+		.navbar-brand {
+			padding-left: 15px;
+		}
+	}
+}
+@media (max-width: 710px) {
+	.carousel-kz-mobile {
+	  .second-slide,
+	  .thumbnail-kz,
+	  .second-slide .thumbnail-kz {
+	    width: 100%;
+	  }
+	}
+}
+@media (min-width: $screen-sm) and (max-width: 795px) {
+	.portfolio-desktop .thumbnail-kz {
+		.caption {
+			min-height: 200px;
+		}
+	}
+}
+
+@media (min-width: 796px) and (max-width: 999px) {
+	.portfolio-desktop .thumbnail-kz {
+		.caption {
+			min-height: 165px;
+		}
+	}
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-lg) {
+	.portfolio-desktop .container,
+	.container-home {
+		width: 100%;
+	}
+}
